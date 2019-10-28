@@ -2,16 +2,15 @@
   "name": "angular7",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "git:push": "git add . && git commit -m \"added codes\" && git push origin master"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://nazmulb:NazB21937A@github.com/nazmulb/angular.git"
+    "url": "git+https://nazmulb@github.com/nazmulb/angular.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Nazmul Basher<nazmul.basher@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/nazmulb/angular/issues"
