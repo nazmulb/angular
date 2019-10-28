@@ -19,7 +19,8 @@ export class ProductDetailsComponent implements OnInit {
 
   ngOnInit() {
     this.route.paramMap.subscribe(params => {
-      this.product = products[params.get('productId')];
+      // The JavaScript (+) operator converts the string to a number.
+      this.product = products[+params.get('productId')];
     });
   }
 
