@@ -1,0 +1,6 @@
+https://angular.io/docs
+https://www.tutorialspoint.com/angular7/index.htm
+
+
+https://www.smashingmagazine.com/2019/02/angular-application-bootstrap
+https://dev.to/thisdotmedia/angular-and-the-rest-nest-js-and-jwt-dja
