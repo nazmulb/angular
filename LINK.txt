@@ -3,7 +3,9 @@ https://www.tutorialspoint.com/angular7/index.htm
 https://www.javatpoint.com/angular-7-tutorial
 
 https://www.youtube.com/watch?v=Fdf5aTYRW0E
-https://www.udemy.com/course/angular-crash-course/
+https://www.youtube.com/watch?v=k5E2AVpwsko
+https://www.youtube.com/watch?v=oXr4lpXEg1o
+https://www.udemy.com/course/angular-crash-course
 
 https://www.smashingmagazine.com/2019/02/angular-application-bootstrap
 https://dev.to/thisdotmedia/angular-and-the-rest-nest-js-and-jwt-dja
