@@ -1,6 +1,6 @@
 https://angular.io/docs
-https://www.tutorialspoint.com/angular7/index.htm
 https://www.javatpoint.com/angular-7-tutorial
+https://www.tutorialspoint.com/angular7/index.htm
 
 https://www.youtube.com/watch?v=Fdf5aTYRW0E
 https://www.youtube.com/watch?v=k5E2AVpwsko
