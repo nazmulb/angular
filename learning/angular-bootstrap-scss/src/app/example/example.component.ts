@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./example.component.scss']
 })
 export class ExampleComponent implements OnInit {
-
+  showGrid: boolean = true;
   constructor() { }
 
   ngOnInit() {
