@@ -1,0 +1,50 @@
+version: "3"
+volumes:
+  mysql:
+networks:
+  rrsurvey:
+    driver:
+      bridge
+services:
+  api:
+    container_name: api
+    build:
+      context: ./api
+      dockerfile: Dockerfile.local
+    depends_on:
+      - db
+    volumes:
+      - ./api:/api
+      - /api/node_modules
+    ports:
+      - "3000:3000"
+    networks:
+      - rrsurvey
+    environment:
+      NODE_ENV: development
+  db:
+    container_name: db
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: 123
+      MYSQL_DATABASE: rr_survey_wizard
+    volumes:
+      - ./data:/docker-entrypoint-initdb.d
+      - mysql:/var/lib/mysql
+    command: --default-authentication-plugin=mysql_native_password
+    ports:
+      - "3306:3306"
+    networks:
+      - rrsurvey
+  ui:
+    container_name: ui
+    build:
+      context: ./ui
+      dockerfile: Dockerfile.local
+    volumes:
+      - ./ui:/ui
+      - /ui/node_modules
+    ports:
+      - "4200:4200"
+    networks:
+      - rrsurvey

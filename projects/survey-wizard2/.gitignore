@@ -1,0 +1,17 @@
+.idea
+.vscode
+dist
+logs
+data
+coverage
+reports
+mysql
+node_modules
+**/npm-debug.log
+
+# OS
+.DS_Store
+
+# Misc
+*.swp
+release.properties

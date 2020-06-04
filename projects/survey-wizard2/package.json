@@ -1,0 +1,19 @@
+{
+  "name": "survey-wizard",
+  "version": "1.0.0",
+  "description": "Reverse Resources Survey wizard for brands (Supplier version)",
+  "scripts": {
+    "lint": "cd api && npm run lint && cd .. && cd ui && npm run lint",
+    "lint:fix": "cd api && npm run lint:fix && cd .. && cd ui && npm run lint:fix",
+    "test": "cd api && npm run test:e2e && cd .. && cd ui && npm test"
+  },
+  "pre-commit": [
+    "lint",
+    "test"
+  ],
+  "author": "Reverse Resources <info@reverseresources.net>",
+  "license": "ISC",
+  "devDependencies": {
+    "pre-commit": "^1.2.2"
+  }
+}
