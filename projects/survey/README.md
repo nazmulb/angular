@@ -1,17 +1,17 @@
-# Survey wizard for brands (Supplier version)
+# Survey
 
 ### Setup:
 
 Please clone this repo:
 
 ```sh
-git clone ssh://git-codecommit.eu-west-1.amazonaws.com/v1/repos/survey-wizard
+git clone https://github.com/nazmulb/angular.git
 ```
 
-Please change directory to this project: 
+Please change directory to this project:
 
 ```sh
-cd survey-wizard
+cd angular/projects/survey
 ```
 
 ### Run the App:
