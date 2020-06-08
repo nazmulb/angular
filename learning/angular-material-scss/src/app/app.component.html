@@ -1,4 +1,48 @@
-<div class="content">
-  <h2>{{ title }} app is running!</h2>
+<div class="content" style="width: 70%; margin: 2rem auto;">
+  <mat-card>
+    <form
+      class="question-form"
+      [formGroup]="form"
+      (submit)="actionSave()"
+    >
+      <mat-card-title>{{ title }}</mat-card-title>
+      <mat-card-content>
+        <mat-form-field class="full-width-input">
+          <mat-label>Name</mat-label>
+          <input
+            matInput
+            placeholder="Name"
+            formControlName="fname"
+            name="fname"
+            required
+          />
+        </mat-form-field>
+        <mat-form-field class="full-width-input">
+          <mat-label>Gender</mat-label>
+          <mat-select
+            placeholder="Gender"
+            formControlName="gender"
+            name="gender"
+            multiple
+            required
+          >
+            <mat-option *ngFor="let gender of genderList" [value]="gender">{{
+              gender
+            }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </mat-card-content>
+      <mat-card-actions>
+        <button
+          mat-raised-button
+          type="submit"
+          [disabled]="!form.valid"
+          color="primary"
+        >
+          Submit
+        </button>
+      </mat-card-actions>
+    </form>
+  </mat-card>
   <router-outlet></router-outlet>
 </div>
