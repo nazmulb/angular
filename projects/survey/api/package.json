@@ -1,8 +1,7 @@
 {
   "name": "api",
   "version": "0.0.1",
-  "description": "RR Survey wizard API",
-  "author": "Reverse Resources <info@reverseresources.net>",
+  "description": "API",
   "license": "MIT",
   "scripts": {
     "prebuild": "rimraf dist",
