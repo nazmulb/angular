@@ -1,7 +1,7 @@
-<div class="content" style="width: 70%; margin: 2rem auto;">
-  <mat-card>
+<div class="content">
+  <mat-card class="my-card">
     <form
-      class="question-form"
+      class="my-form"
       [formGroup]="form"
       (submit)="actionSave()"
     >
@@ -16,6 +16,10 @@
             name="fname"
             required
           />
+        </mat-form-field>
+        <mat-form-field class="full-width-input">
+          <mat-label>Comment</mat-label>
+          <textarea matInput placeholder="Comment" formControlName="comment" name="comment"></textarea>
         </mat-form-field>
         <mat-form-field class="full-width-input">
           <mat-label>Gender</mat-label>
